@@ -21,8 +21,14 @@
 </template>
 
 <script>
+
+import { conversationsRef } from '../config.js';
+
 export default {
   name: 'hello',
+  firebase: {
+    conversations: conversationsRef.limitToLast(100)
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
