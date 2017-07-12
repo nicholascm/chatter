@@ -15,6 +15,7 @@
     messagingSenderId: "186746915202"
   };
 
-  let app = Firebase.initializeApp(config)
-  let db = app.database()
+  export const app = Firebase.initializeApp(config)
+  export let db = app.database()
   export const conversationsRef = db.ref('conversations');
+  export const authRef = app.auth();

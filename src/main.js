@@ -7,7 +7,8 @@ import VueRouter from 'vue-router';
 
 import App from './App'
 import Hello from './components/Hello.vue';
-import Conversations from './components/Conversations.vue';
+import ConversationList from './components/ConversationList.vue';
+import Conversation from './components/Conversation.vue';
 
 /*
  * Because we installed VueFire via npm and imported it as a module, we have
@@ -19,8 +20,9 @@ Vue.use(VueFire)
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/', component: Hello },
-  { path: '/conversations', component: Conversations }
+  { path: '/', component: Hello, name: 'home'},
+  { path: '/conversations', component: ConversationList, name: 'conversations' },
+  { path: '/conversations/:id', component: Conversation, name: 'viewConversation' }
 ]
 const router = new VueRouter({
   routes
