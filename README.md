@@ -8,32 +8,6 @@ likely move toward a more opinionated structure that allows for rapid project
 scaffolding. It comes bundled with webpack and Babel so you can tap into the
 latest trends in JavaScript app development.
 
-[**A demo version is available here:** https://vuefire-quickstart-demo.firebaseapp.com/]
-(https://vuefire-quickstart-demo.firebaseapp.com/)
-
-## Build Setup
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
 
 ## Deploy to Firebase
 
